@@ -10,7 +10,8 @@ function subscribe() {
     navigator.serviceWorker.ready.then(function(reg) {
 
       reg.pushManager.subscribe({
-        userVisibleOnly: true
+        userVisibleOnly: true,
+        applicationServerKey: 'BJJGXe_UI1N4uuyLGwfXQ1p3LUPYQnSlo9K_QtMAmRBsIYYoiqtW6gppS8mg_TnRRktW37hnPgAa1s_ncB9yBIU'
       }).then(function(sub) {
         console.log(sub);
       }).catch(function(e) {
