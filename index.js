@@ -13,7 +13,7 @@ function subscribe() {
         userVisibleOnly: true,
         applicationServerKey: 'BJJGXe_UI1N4uuyLGwfXQ1p3LUPYQnSlo9K_QtMAmRBsIYYoiqtW6gppS8mg_TnRRktW37hnPgAa1s_ncB9yBIU'
       }).then(function(sub) {
-        console.log(sub);
+        console.log(JSON.stringify(sub));
       }).catch(function(e) {
         if (Notification.permission === 'denied') {
           console.warn('Permission for notifications was denied');
